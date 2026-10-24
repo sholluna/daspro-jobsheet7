@@ -3,8 +3,7 @@ import java.util.Scanner;
  * nilaiMahasiswa25
  */
 public class siakadFor25 {
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         double nilai,Tertinggi = -0,terendah =100;
@@ -19,17 +18,10 @@ public class siakadFor25 {
             }
             if (nilai < terendah) {
                 terendah = nilai;
-            if (nilai>=60) {
-                lulus++;
-            }else{
-                tidakLulus++;
             }
         }
         System.out.println("nilai tertinggi: " + Tertinggi);
         System.out.println("nilai terendah: " + terendah);
-        System.out.println("jumlah mahasiswa lulus: " + lulus);
-        System.out.println("jumlah mahasiswa tidak lulus: " + tidakLulus);
         sc.close();
-
     }
 }
